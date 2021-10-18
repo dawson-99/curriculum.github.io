@@ -6,27 +6,16 @@ public class test {
 
 
     public static void main(String [] args) {
-        int amount = 0;
-        float price = 0;
+        int amount;
+        float price;
         float sum;
 
         Scanner scanner = new Scanner(System.in);
 
-        //the nextXxx method was used to judge
         System.out.println("input the amount");
-        if(scanner.hasNextInt()){
-            amount = scanner.nextInt();
-        } else {
-            System.out.println("error");
-        }
-
+        amount = scanner.nextInt();
         System.out.println("input the price of single product");
-        if (scanner.hasNextFloat()) {
-            price = scanner.nextFloat();
-        } else {
-            System.out.println("error");
-        }
-
+        price = scanner.nextFloat();
 
         sum = amount * price;
         System.out.println("the total price is: " + sum);
