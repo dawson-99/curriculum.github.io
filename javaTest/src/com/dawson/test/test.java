@@ -1,16 +1,17 @@
 package com.dawson.test;
 
 public class test {
+
+    //学号：202013160210 姓名：徐睿航
+    //题目所属章节：基本数据类型与数组
+    //题型：选择
+    /*题干如下：
+         请选出下列中错误的一项
+     */
     public static void main(String args[]) {
-        System.out.println("capitalization of Greek Alphabet and lower case");
-        char capital = '\u0391'; // we can konw the acs code of Alpha was \u0391
-        char lower = '\u03B1';
-
-        for (int i = 0;i < 25;i++) {
-            System.out.println(capital + "\t" + lower);
-            capital++;
-            lower++;
-        }
-
+        char c = 65535;      //A
+        byte b = 127;        //B
+        int height = 100;    //C
+        float f = 2.13;      //D
     }
 }

@@ -10,6 +10,7 @@ public class test {
         Account HongKong = new Account();
         Account YangM = new Account();
         Account SheYS = new Account();
+        Account Yummi = new Account();
 
         Role role;
 
@@ -35,6 +36,11 @@ public class test {
         SheYS.setName("SheYS");
         SheYS.setPassword("rgregre63426");
 
+        role = new Officer();
+        Yummi.setRole(role);
+        Yummi.setName("Yummi");
+        Yummi.setPassword("45jkj453143");
+
 
         XuRH.getRole().walk();
         XuRH.getRole().depict();
@@ -47,17 +53,19 @@ public class test {
         YangM.getRole().depict();
         SheYS.getRole().walk();
         SheYS.getRole().depict();
+        Yummi.getRole().walk();
+        Yummi.getRole().depict();
 
         SheYS.getRole().run();
-        SheYS.getRole().speak("你们都是垃圾");
+        SheYS.getRole().speak("你们都是垃圾  速度100");
         XuRH.getRole().run();
-        XuRH.getRole().speak("你怕是作弊了");
+        XuRH.getRole().speak("你怕是作弊了  速度50");
         HongKong.getRole().run();
-        HongKong.getRole().speak("我居然才第三");
+        HongKong.getRole().speak("我居然才第三 速度40");
         YangM.getRole().run();
-        YangM.getRole().speak("我居然最后");
-
-
+        YangM.getRole().speak("我居然最后  速度30");
+        Yummi.getRole().run();
+        Yummi.getRole().speak("热了个身 速度20");// 官员升堂方法作为额外方法添加到speak方法里面一起执行
 
     }
 
